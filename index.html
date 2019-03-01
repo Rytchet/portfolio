@@ -12,10 +12,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     .jumbotron {
       background-color: #fff;
       padding-top: 180px;
       padding-bottom: 180px;
+    }
+
+    body {
+      background-color: #f5f5f5;
     }
 
     .section {
@@ -24,12 +32,16 @@
     }
 
     .container {
-      padding-left: 10%;
-      padding-right: 10%;
+      /* padding-left: 10%;
+      padding-right: 10%; */
     }
 
     textarea {
       min-height: 100px;
+    }
+
+    ul {
+      background-color: #fff;
     }
   </style>
 </head>
@@ -38,19 +50,19 @@
 
   <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Projects</a>
+      <a class="nav-link active" href="#projects">Projects</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#">Experience</a>
+      <a class="nav-link active" href="#experience">Experience</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#">Skills</a>
+      <a class="nav-link active" href="#skills">Skills</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#">About</a>
+      <a class="nav-link active" href="#about">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#">Contact</a>
+      <a class="nav-link active" href="#contact">Contact</a>
     </li>
   </ul>
 
@@ -64,7 +76,7 @@
   </div>
 
 
-  <div class="section portfolio">
+  <div class="section projects" id="projects">
     <div class="container">
       <div class="mb-5 text-center">
         <h1 class="display-4">My projects</h1>
@@ -101,12 +113,122 @@
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div class="section experience">
+  <div class="section experience" id="experience">
+    <div class="container pb-5">
+      <div class="mb-5 text-center">
+        <h1 class="display-4">My experience</h1>
+      </div>
+
+      <div class="card shadow">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img" alt="anime">
+          </div>
+
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title">Company name</h4>
+              <p class="card-text">Description of the company</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section skills" id="skills">
+    <div class="container pb-5">
+      <div class="mb-5 text-center">
+        <h1 class="display-4">My skills</h1>
+      </div>
+
+      <div class="row">
+
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+              class="card-img-top" alt="anime">
+            <div class="card-body">
+              <h5 class="card-title">Language name</h5>
+              <p class="card-text">Some text about it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section about" id="about">
       <div class="container pb-5">
+
         <div class="mb-5 text-center">
-          <h1 class="display-4">My experience</h1>
+          <h1 class="display-4">About me</h1>
         </div>
 
         <div class="card shadow">
@@ -119,157 +241,47 @@
 
             <div class="col-md-8">
               <div class="card-body">
-                <h4 class="card-title">Company name</h4>
-                <p class="card-text">Description of the company</p>
+                <p class="card-text">Something about me</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section skills">
+    <div class="section contact" id="contact">
       <div class="container pb-5">
+
         <div class="mb-5 text-center">
-          <h1 class="display-4">My skills</h1>
+          <h1 class="display-4">Contact me!</h1>
         </div>
 
-        <div class="row">
 
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
+        <form action="#">
+          <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input type="text" class="form-control" id="nameInput">
           </div>
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" class="form-control" id="emailInput">
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" class="form-control" rows="8"></textarea>
+          </div>
+          <button class="btn btn-dark btn-lg btn-block" type="submit">Send</button>
+        </form>
 
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
+        <div class="text-center mt-5">
+          <p>Email link</p>
+          <p>Phone</p>
+          <p>Social media links here</p>
         </div>
-        <div class="row mt-3">
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top" alt="anime">
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <div class="section about">
-        <div class="container pb-5">
-
-          <div class="mb-5 text-center">
-            <h1 class="display-4">About me</h1>
-          </div>
-
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                  class="card-img" alt="anime">
-              </div>
-
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">Something about me</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section contact">
-        <div class="container pb-5">
-
-          <div class="mb-5 text-center">
-            <h1 class="display-4">Contact me!</h1>
-          </div>
 
 
-          <form action="#">
-            <div class="form-group">
-              <label for="nameInput">Name</label>
-              <input type="text" class="form-control" id="nameInput">
-            </div>
-            <div class="form-group">
-              <label for="emailInput">Email</label>
-              <input type="email" class="form-control" id="emailInput">
-            </div>
-            <div class="form-group">
-              <label for="messageInput">Message</label>
-              <textarea id="messageInput" class="form-control" rows="8"></textarea>
-            </div>
-            <button class="btn btn-dark btn-lg btn-block" type="submit">Send</button>
-          </form>
-
-          <div class="text-center mt-5">
-            <p>Email link</p>
-            <p>Phone</p>
-            <p>Social media links here</p>
-          </div>
-
-        </div>
-
-
-
-      </div>
     </div>
   </div>
 
