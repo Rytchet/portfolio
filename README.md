@@ -1,2 +1,4 @@
 # rytchet.github.io
-Portfolio site
+My portfolio site
+
+Go to https://rytchet.github.io/ to see it
