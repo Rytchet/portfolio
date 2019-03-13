@@ -17,19 +17,23 @@
     <style>
       html {
         scroll-behavior: smooth;
+        font-size: 18px;
+      }
+
+      .container {
+        max-width: 900px;
       }
 
       body {
-        background-color: #151515;
+        background-color: #f5f5f5;
       }
 
       .theme {
-        color: #6ed3cf;
+        color: #6ed3cf !important;
       }
 
       .navbar {
         background-color: #151515 !important;
-        border-bottom: 2px solid #6ed3cf;
       }
 
       .navbar-nav {
@@ -74,8 +78,8 @@
       .heading {
         background-color: #151515;
         color: #cacaca;
-        padding-top: 120px;
-        padding-bottom: 160px;
+        padding-top: 100px;
+        padding-bottom: 140px;
       }
 
       .section {
@@ -85,10 +89,63 @@
 
       .display-4 {
         font-size: 40px;
+        color: #151515;
       }
 
       textarea {
         min-height: 100px;
+      }
+
+      p.links > a {
+        color: #6ed3cf !important;
+        text-decoration: underline;
+        padding: 0 10px;
+        font-weight: 300;
+        font-size: 18px;
+      }
+      p.links {
+        padding-top: 30px;
+      }
+
+      .links.bottom-links > a {
+        font-size: 22px;
+      }
+
+      .links.bottom-links {
+        padding-top: 0;
+      }
+
+      .card-title > a {
+        color: #151515;
+        text-decoration: underline;
+      }
+
+      .card-img-top {
+        object-fit: cover;
+        object-position: 50% 0;
+      }
+
+      .img-wrap {
+        width: 33%;
+        float: left;
+        padding: 10px;
+      }
+
+      .my-photo {
+        width: 100%;
+        max-width: 270px;
+      }
+
+      p.about-me {
+        float: right;
+      }
+
+      .about-me-card {
+        flex-direction: row;
+      }
+
+      .about-me-text {
+        padding: 20px;
       }
     </style>
   </head>
@@ -113,14 +170,18 @@
         </li>
       </ul>
     </nav>
-
-    <hr />
-
     <div class="heading text-center">
       <h1 class="display-3">Hello!</h1>
       <p class="lead mt-5">
         My name is <span class="theme">Oskar</span> and I'm a Liverpool based
-        <span class="theme">Software Developer</span>
+        <span class="theme">Software Developer</span><br />
+      </p>
+      <p class="links">
+        <a href="mailto:oskar.grudzinski5@gmail.com">email</a>
+        /
+        <a href="https://github.com/Rytchet" target="_blank">github</a>
+        /
+        <a href="#">linkedin</a>
       </p>
     </div>
 
@@ -130,39 +191,112 @@
           <h1 class="display-4">My projects</h1>
         </div>
 
-        <div class="card mb-5 shadow">
-          <img
-            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-            class="card-img-top"
-            alt="anime"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Description of the project</p>
+        <div class="card-deck">
+          <div class="card mb-5 shadow card-project">
+            <img
+              src="https://i.imgur.com/0OPrzTs.png"
+              class="card-img-top"
+              alt="transferlease"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                transferlease.co
+              </h4>
+              <p class="card-text">
+                An ecommerce site where you can transfer your car lease. It was
+                created using Wordpress and PHP
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <a href="http://transferlease.co" class="card-link">
+                  Visit it here
+                </a>
+              </small>
+            </div>
+          </div>
+
+          <div class="card mb-5 shadow card-project">
+            <img
+              src="https://i.imgur.com/UjIWe90.png"
+              class="card-img-top"
+              alt="career-hackathon"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                My Career Tracker
+              </h4>
+              <p class="card-text">
+                A demo of a system where students could acquire points by
+                completing tasks and going to events, then spend points on
+                rewards. It was created during a Liverpool Computer Science
+                Society Hackathon, using Python with Django
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <a
+                  href="https://github.com/Rytchet/career-hackathon"
+                  class="card-link"
+                >
+                  View source code
+                </a>
+              </small>
+            </div>
           </div>
         </div>
 
-        <div class="card mb-5 shadow">
-          <img
-            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-            class="card-img-top"
-            alt="anime"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Description of the project</p>
+        <div class="card-deck">
+          <div class="card mb-5 shadow card-project">
+            <img
+              src="https://i.imgur.com/6k9TZMA.png"
+              class="card-img-top"
+              alt="todo-list"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Todo List
+              </h4>
+              <p class="card-text">
+                A responsive single-page serverless Todo page made with React.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <a
+                  href="https://github.com/Rytchet/react_todo"
+                  class="card-link"
+                >
+                  View source code
+                </a>
+              </small>
+            </div>
           </div>
-        </div>
 
-        <div class="card mb-5 shadow">
-          <img
-            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-            class="card-img-top"
-            alt="anime"
-          />
-          <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Description of the project</p>
+          <div class="card mb-5 shadow card-project">
+            <img
+              src="https://i.imgur.com/7EbF6fW.png"
+              class="card-img-top"
+              alt="socket-chat"
+            />
+            <div class="card-body">
+              <h4 class="card-title">
+                Chat app
+              </h4>
+              <p class="card-text">
+                A simple chat app using Express and Socket.io
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                <a
+                  href="https://github.com/Rytchet/socket-chat"
+                  class="card-link"
+                >
+                  View source code
+                </a>
+              </small>
+            </div>
           </div>
         </div>
       </div>
@@ -176,18 +310,27 @@
 
         <div class="card shadow">
           <div class="row no-gutters">
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                src="https://hrpolska.pl/uploads/firms/5841ae11e7ffa0a08c4342ae75483b906d26e397-avg.jpg"
                 class="card-img"
-                alt="anime"
+                alt="hrlink"
               />
             </div>
 
-            <div class="col-md-8">
+            <div class="col-sm-8">
               <div class="card-body">
-                <h4 class="card-title">Company name</h4>
-                <p class="card-text">Description of the company</p>
+                <h4 class="card-title">
+                  <a href="https://www.hrlink.pl/en">Hrlink.pl</a>
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Sep. 2016 - May 2018
+                </h6>
+                <p class="card-text">
+                  I was a tester for the company's multiposting and online
+                  recruitment system. I used Python and PHP to automate common
+                  tasks and for writing tests.
+                </p>
               </div>
             </div>
           </div>
@@ -201,90 +344,38 @@
           <h1 class="display-4">My skills</h1>
         </div>
 
-        <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
+        <div class="card shadow">
+          <h5 class="card-header">Full Stack Web Development</h5>
+          <div class="card-body">
+            <p class="card-text">
+              I've been making websites in my free time for over 7 years now, I
+              specialize in back end development. I started out with PHP and
+              jQuery, and now work primarly with Python (Django) and NodeJS
+              (Express) using React with Redux on the front end
+            </p>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
+        <div class="card shadow mt-5">
+          <h5 class="card-header">Software Development</h5>
+          <div class="card-body">
+            <p class="card-text">
+              I have experience making applications with C++, which I learned in
+              high school, and Java, which I am currently learning in
+              University.
+            </p>
           </div>
+        </div>
 
-          <div class="col-4">
-            <div class="card">
-              <img
-                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img-top"
-                alt="anime"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Language name</h5>
-                <p class="card-text">Some text about it</p>
-              </div>
-            </div>
+        <div class="card shadow mt-5">
+          <h5 class="card-header">Other technologies</h5>
+          <div class="card-body">
+            <p class="card-text">
+              I know and have been using Git for over two years now, hosting all
+              of my personal projects on GitHub and also using it in group
+              projects. I also have experience using Linux, Apache, FTP and SSH.
+              I use MySQL or MongoDB for my databases
+            </p>
           </div>
         </div>
       </div>
@@ -295,25 +386,33 @@
             <h1 class="display-4">About me</h1>
           </div>
 
-          <div class="card shadow">
-            <div class="row no-gutters">
-              <div class="col-md-4">
-                <img
-                  src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                  class="card-img"
-                  alt="anime"
-                />
-              </div>
+          <div class="card shadow about-me-card">
+            <div class="img-wrap">
+              <img
+                src="https://avatars3.githubusercontent.com/u/20868717?s=460&v=4"
+                class="my-photo"
+                alt="me"
+              />
+            </div>
+            <div class="about-me-text">
+              <p>
+                I am a Year 1 Computer Science student at the University of
+                Liverpool.
+              </p>
+              <p>
+                I like making useful stuff with code and I'm always up for new
+                challenges.
+              </p>
 
-              <div class="col-md-8">
-                <div class="card-body">
-                  <p class="card-text">Something about me</p>
-                </div>
-              </div>
+              <p>
+                When I'm not programming, my free time is spent watching classic
+                movies and playing on a plastic guitar
+              </p>
             </div>
           </div>
         </div>
       </div>
+
       <div class="section contact" id="contact">
         <div class="container pb-5">
           <div class="mb-5 text-center">
@@ -341,13 +440,29 @@
               Send
             </button>
           </form>
-
-          <div class="text-center mt-5">
-            <p>Email link</p>
-            <p>Phone</p>
-            <p>Social media links here</p>
-          </div>
         </div>
+      </div>
+    </div>
+
+    <div
+      class="section final"
+      style="background-color: #151515; padding-bottom:50px;"
+    >
+      <div class="text-center mt-5" style="background-color: #151515">
+        <p>
+          📬
+          <a class="theme lead" href="mailto:oskar.grudzinski5@gmail.com"
+            >oskar.grudzinski5@gmail.com</a
+          >
+        </p>
+        <p>📞<a class="theme lead" href="tel:07341679711"> 07341 679 711</a></p>
+        <p class="links bottom-links">
+          <a href="mailto:oskar.grudzinski5@gmail.com">email</a>
+          /
+          <a href="https://github.com/Rytchet" target="_blank">github</a>
+          /
+          <a href="#">linkedin</a>
+        </p>
       </div>
     </div>
 
