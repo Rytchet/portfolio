@@ -1,234 +1,177 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>
+      Oskar Grudzinski
+    </title>
 
-<head>
-  <title>
-    Oskar Grudzinski
-  </title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+      body {
+        background-color: #151515;
+      }
 
-    .jumbotron {
-      background-color: #fff;
-      padding-top: 180px;
-      padding-bottom: 180px;
-    }
+      .theme {
+        color: #6ed3cf;
+      }
 
-    body {
-      background-color: #f5f5f5;
-    }
+      .navbar {
+        background-color: #151515 !important;
+        border-bottom: 2px solid #6ed3cf;
+      }
 
-    .section {
-      padding-top: 30px;
-      background-color: #f5f5f5;
-    }
+      .navbar-nav {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
 
-    .container {
-      /* padding-left: 10%;
-      padding-right: 10%; */
-    }
+      .lead {
+        margin: 0 10px;
+      }
 
-    textarea {
-      min-height: 100px;
-    }
+      .navbar-nav > li {
+        display: inline-block;
+        float: none;
+        font-size: 15px;
+        margin: 0 15px;
+      }
 
-    ul {
-      background-color: #fff;
-    }
-  </style>
-</head>
+      @media (max-width: 550px) {
+        .navbar-nav > li {
+          margin: 0 9px;
+        }
+      }
 
-<body>
+      @media (max-width: 415px) {
+        .navbar-nav > li {
+          font-size: 13px;
+        }
+      }
 
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#experience">Experience</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#skills">Skills</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#about">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#contact">Contact</a>
-    </li>
-  </ul>
+      @media (max-width: 356px) {
+        .navbar-nav > li {
+          margin: 0 5px;
+        }
+      }
 
+      .nav-link {
+        color: #cacaca !important;
+      }
 
+      .heading {
+        background-color: #151515;
+        color: #cacaca;
+        padding-top: 120px;
+        padding-bottom: 160px;
+      }
 
-  <div class="jumbotron text-center">
-    <h1 class="jumbotron-heading display-3">Hi, I'm Oskar</h1>
-    <p class="lead text-muted">
-      Something short about me
-    </p>
-  </div>
+      .section {
+        padding-top: 30px;
+        background-color: #f5f5f5;
+      }
 
+      .display-4 {
+        font-size: 40px;
+      }
 
-  <div class="section projects" id="projects">
-    <div class="container">
-      <div class="mb-5 text-center">
-        <h1 class="display-4">My projects</h1>
-      </div>
+      textarea {
+        min-height: 100px;
+      }
+    </style>
+  </head>
 
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="card mb-5 shadow">
-        <img
-          src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-          class="card-img-top" alt="anime">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Description of the project</p>
-        </div>
-      </div>
+    <hr />
 
-      <div class="card mb-5 shadow">
-        <img
-          src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-          class="card-img-top" alt="anime">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Description of the project</p>
-        </div>
-      </div>
-
-      <div class="card mb-5 shadow">
-        <img
-          src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-          class="card-img-top" alt="anime">
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Description of the project</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="section experience" id="experience">
-    <div class="container pb-5">
-      <div class="mb-5 text-center">
-        <h1 class="display-4">My experience</h1>
-      </div>
-
-      <div class="card shadow">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img" alt="anime">
-          </div>
-
-          <div class="col-md-8">
-            <div class="card-body">
-              <h4 class="card-title">Company name</h4>
-              <p class="card-text">Description of the company</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section skills" id="skills">
-    <div class="container pb-5">
-      <div class="mb-5 text-center">
-        <h1 class="display-4">My skills</h1>
-      </div>
-
-      <div class="row">
-
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card">
-            <img
-              src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-              class="card-img-top" alt="anime">
-            <div class="card-body">
-              <h5 class="card-title">Language name</h5>
-              <p class="card-text">Some text about it</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="heading text-center">
+      <h1 class="display-3">Hello!</h1>
+      <p class="lead mt-5">
+        My name is <span class="theme">Oskar</span> and I'm a Liverpool based
+        <span class="theme">Software Developer</span>
+      </p>
     </div>
 
-    <div class="section about" id="about">
-      <div class="container pb-5">
-
+    <div class="section projects" id="projects">
+      <div class="container">
         <div class="mb-5 text-center">
-          <h1 class="display-4">About me</h1>
+          <h1 class="display-4">My projects</h1>
+        </div>
+
+        <div class="card mb-5 shadow">
+          <img
+            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+            class="card-img-top"
+            alt="anime"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Description of the project</p>
+          </div>
+        </div>
+
+        <div class="card mb-5 shadow">
+          <img
+            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+            class="card-img-top"
+            alt="anime"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Description of the project</p>
+          </div>
+        </div>
+
+        <div class="card mb-5 shadow">
+          <img
+            src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+            class="card-img-top"
+            alt="anime"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Title</h4>
+            <p class="card-text">Description of the project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section experience" id="experience">
+      <div class="container pb-5">
+        <div class="mb-5 text-center">
+          <h1 class="display-4">My experience</h1>
         </div>
 
         <div class="card shadow">
@@ -236,65 +179,192 @@
             <div class="col-md-4">
               <img
                 src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
-                class="card-img" alt="anime">
+                class="card-img"
+                alt="anime"
+              />
             </div>
 
             <div class="col-md-8">
               <div class="card-body">
-                <p class="card-text">Something about me</p>
+                <h4 class="card-title">Company name</h4>
+                <p class="card-text">Description of the company</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="section contact" id="contact">
+
+    <div class="section skills" id="skills">
       <div class="container pb-5">
-
         <div class="mb-5 text-center">
-          <h1 class="display-4">Contact me!</h1>
+          <h1 class="display-4">My skills</h1>
         </div>
 
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
+          </div>
 
-        <form action="#">
-          <div class="form-group">
-            <label for="nameInput">Name</label>
-            <input type="text" class="form-control" id="nameInput">
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="emailInput">Email</label>
-            <input type="email" class="form-control" id="emailInput">
-          </div>
-          <div class="form-group">
-            <label for="messageInput">Message</label>
-            <textarea id="messageInput" class="form-control" rows="8"></textarea>
-          </div>
-          <button class="btn btn-dark btn-lg btn-block" type="submit">Send</button>
-        </form>
 
-        <div class="text-center mt-5">
-          <p>Email link</p>
-          <p>Phone</p>
-          <p>Social media links here</p>
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row mt-3">
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                class="card-img-top"
+                alt="anime"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language name</h5>
+                <p class="card-text">Some text about it</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="section about" id="about">
+        <div class="container pb-5">
+          <div class="mb-5 text-center">
+            <h1 class="display-4">About me</h1>
+          </div>
 
+          <div class="card shadow">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="https://i.kinja-img.com/gawker-media/image/upload/s--4LHBt0O4--/c_scale,f_auto,fl_progressive,q_80,w_800/kaprfadz9rnvypesa2u9.png"
+                  class="card-img"
+                  alt="anime"
+                />
+              </div>
 
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">Something about me</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section contact" id="contact">
+        <div class="container pb-5">
+          <div class="mb-5 text-center">
+            <h1 class="display-4">Contact me!</h1>
+          </div>
+
+          <form action="#">
+            <div class="form-group">
+              <label for="nameInput">Name</label>
+              <input type="text" class="form-control" id="nameInput" />
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email</label>
+              <input type="email" class="form-control" id="emailInput" />
+            </div>
+            <div class="form-group">
+              <label for="messageInput">Message</label>
+              <textarea
+                id="messageInput"
+                class="form-control"
+                rows="8"
+              ></textarea>
+            </div>
+            <button class="btn btn-dark btn-lg btn-block" type="submit">
+              Send
+            </button>
+          </form>
+
+          <div class="text-center mt-5">
+            <p>Email link</p>
+            <p>Phone</p>
+            <p>Social media links here</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
