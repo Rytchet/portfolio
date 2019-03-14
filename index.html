@@ -12,122 +12,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <style>
-      html {
-        scroll-behavior: smooth;
-        font-size: 18px;
-      }
-
-      .container {
-        max-width: 900px;
-      }
-
-      body {
-        background-color: #f5f5f5;
-      }
-
-      .theme {
-        color: #6ed3cf !important;
-      }
-
-      .navbar {
-        background-color: #151515 !important;
-      }
-
-      .navbar-nav {
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-      }
-
-      .lead {
-        margin: 0 10px;
-      }
-
-      .navbar-nav > li {
-        display: inline-block;
-        float: none;
-        font-size: 15px;
-        margin: 0 15px;
-      }
-
-      @media (max-width: 550px) {
-        .navbar-nav > li {
-          margin: 0 9px;
-        }
-      }
-
-      @media (max-width: 415px) {
-        .navbar-nav > li {
-          font-size: 12px;
-        }
-      }
-
-      @media (max-width: 356px) {
-        .navbar-nav > li {
-          margin: 0 5px;
-        }
-      }
-
-      .nav-link {
-        color: #cacaca !important;
-      }
-
-      .heading {
-        background-color: #151515;
-        color: #cacaca;
-        padding-top: 110px;
-        padding-bottom: 150px;
-      }
-
-      .section {
-        padding-top: 30px;
-        background-color: #f5f5f5;
-      }
-
-      .display-4 {
-        font-size: 40px;
-        color: #151515;
-      }
-
-      textarea {
-        min-height: 100px;
-      }
-
-      p.links > a {
-        color: #6ed3cf !important;
-        text-decoration: underline;
-        padding: 0 10px;
-        font-weight: 300;
-        font-size: 18px;
-      }
-      p.links {
-        padding-top: 30px;
-      }
-
-      .links.bottom-links > a {
-        font-size: 22px;
-      }
-
-      .links.bottom-links {
-        padding-top: 0;
-      }
-
-      .card-title > a {
-        color: #151515;
-        text-decoration: underline;
-      }
-
-      .card-img-top {
-        object-fit: cover;
-        object-position: 50% 0;
-      }
-    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
 
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -147,28 +38,39 @@
         </li>
       </ul>
     </nav>
+
+    <!-- Header -->
     <div class="heading text-center">
       <h1 class="display-3">Hello!</h1>
       <p class="lead mt-5">
-        My name is <span class="theme">Oskar</span> and I'm a Liverpool based
-        <span class="theme">Software Developer</span><br />
+        My name is
+        <span class="theme">Oskar</span>
+        and I'm a Liverpool based
+        <span class="theme">Software Developer</span>
+        <br />
       </p>
       <p class="links">
         <a href="mailto:oskar.grudzinski5@gmail.com">email</a>
         /
         <a href="https://github.com/Rytchet" target="_blank">github</a>
         /
-        <a href="https://www.linkedin.com/in/oskar-grudzinski-a6a475181/" target="_blank">linkedin</a>
+        <a
+          href="https://www.linkedin.com/in/oskar-grudzinski-a6a475181/"
+          target="_blank"
+          >linkedin</a
+        >
       </p>
     </div>
 
-    <div class="section projects" id="projects">
-      <div class="container">
+    <div class="container">
+      <!-- ### Projects ### -->
+      <div class="section projects" id="projects">
         <div class="mb-5 text-center">
           <h1 class="display-4">My projects</h1>
         </div>
 
         <div class="card-deck">
+          <!-- Transferlease -->
           <div class="card mb-5 shadow card-project">
             <img
               src="https://i.imgur.com/0OPrzTs.png"
@@ -180,9 +82,13 @@
                 transferlease.co
               </h4>
               <p class="card-text">
-                An ecommerce site where you can transfer your car lease. It was
-                created using Wordpress and PHP
+                An ecommerce site where you can transfer your car lease.
               </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                Made with: Wordpress, PHP
+              </small>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -192,7 +98,7 @@
               </small>
             </div>
           </div>
-
+          <!-- Career tracker -->
           <div class="card mb-5 shadow card-project">
             <img
               src="https://i.imgur.com/UjIWe90.png"
@@ -204,11 +110,14 @@
                 My Career Tracker
               </h4>
               <p class="card-text">
-                A demo of a system where students could acquire points by
-                completing tasks and going to events, then spend points on
-                rewards. It was created during a Liverpool Computer Science
-                Society Hackathon, using Python with Django
+                A system where students can acquire points by completing tasks
+                and going to events, then spend points on rewards.
               </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                Made with: Python, Django
+              </small>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -224,6 +133,7 @@
         </div>
 
         <div class="card-deck">
+          <!-- Todo list -->
           <div class="card mb-5 shadow card-project">
             <img
               src="https://i.imgur.com/6k9TZMA.png"
@@ -235,8 +145,13 @@
                 Todo List
               </h4>
               <p class="card-text">
-                A responsive single-page serverless Todo page made with React.
+                A responsive single-page serverless Todo page
               </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                Made with: Javascript, React
+              </small>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -249,7 +164,7 @@
               </small>
             </div>
           </div>
-
+          <!-- Chat app -->
           <div class="card mb-5 shadow card-project">
             <img
               src="https://i.imgur.com/7EbF6fW.png"
@@ -261,8 +176,14 @@
                 Chat app
               </h4>
               <p class="card-text">
-                A simple chat app using Express and Socket.io
+                A simple one page chat app, it has support for multiple users
+                and usernames
               </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">
+                Made with: Node.js, express, socket.io
+              </small>
             </div>
             <div class="card-footer">
               <small class="text-muted">
@@ -277,10 +198,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="section experience" id="experience">
-      <div class="container pb-5">
+      <!-- ### Experience ### -->
+      <div class="section experience" id="experience">
         <div class="mb-5 text-center">
           <h1 class="display-4">My experience</h1>
         </div>
@@ -294,7 +214,6 @@
                 alt="hrlink"
               />
             </div>
-
             <div class="col-sm-8">
               <div class="card-body">
                 <h4 class="card-title">
@@ -313,10 +232,9 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="section skills" id="skills">
-      <div class="container pb-5">
+      <!-- ### Skills ### -->
+      <div class="section skills" id="skills">
         <div class="mb-5 text-center">
           <h1 class="display-4">My skills</h1>
         </div>
@@ -357,39 +275,37 @@
         </div>
       </div>
 
-      <div class="section about" id="about">
-        <div class="container pb-5">
-          <div class="mb-5 text-center">
-            <h1 class="display-4">About me</h1>
-          </div>
+      <!-- ### About ### -->
+      <div class="section about mb-5" id="about">
+        <div class="mb-5 text-center">
+          <h1 class="display-4">About me</h1>
+        </div>
 
-          <div class="card shadow">
-            <div class="card-body">
-              <div class="card-text">
-                <p>
-                  I am a Year 1 Computer Science student at the University of
-                  Liverpool.
-                </p>
-                <p>
-                  I like making useful stuff with code and I'm always up for new
-                  challenges.
-                </p>
-                <p>
-                  When I'm not programming, my free time is usually spent
-                  watching classic movies or playing on a plastic guitar
-                </p>
-                <p>Thanks for checking out my site</p>
-              </div>
+        <div class="card shadow">
+          <div class="card-body">
+            <div class="card-text">
+              <p>
+                I am a Year 1 Computer Science student at the University of
+                Liverpool.
+              </p>
+              <p>
+                I like making useful stuff with code and I'm always up for new
+                challenges.
+              </p>
+              <p>
+                When I'm not programming, my free time is usually spent watching
+                classic movies or playing on a plastic guitar
+              </p>
+              <p>Thanks for checking out my site</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    <div
-      class="section final"
-      style="background-color: #151515; padding-bottom:50px;"
-    >
-      <div class="text-center mt-5" style="background-color: #151515">
+    <!-- ### Footer ### -->
+    <div class="section contact" id="contact">
+      <div class="text-center mt-5">
         <p>
           📬
           <a class="theme lead" href="mailto:oskar.grudzinski5@gmail.com"
@@ -402,7 +318,11 @@
           /
           <a href="https://github.com/Rytchet" target="_blank">github</a>
           /
-          <a href="https://www.linkedin.com/in/oskar-grudzinski-a6a475181/" target="_blank">linkedin</a>
+          <a
+            href="https://www.linkedin.com/in/oskar-grudzinski-a6a475181/"
+            target="_blank"
+            >linkedin</a
+          >
         </p>
       </div>
     </div>

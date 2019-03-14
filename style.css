@@ -1,0 +1,118 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 900px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.theme {
+  color: #6ed3cf !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #151515 !important;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav > li {
+  display: inline-block;
+  float: none;
+  font-size: 15px;
+  margin: 0 15px;
+}
+
+@media (max-width: 550px) {
+  .navbar-nav > li {
+    margin: 0 9px;
+  }
+}
+
+@media (max-width: 415px) {
+  .navbar-nav > li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 356px) {
+  .navbar-nav > li {
+    margin: 0 5px;
+  }
+}
+
+.nav-link {
+  color: #cacaca !important;
+}
+
+/* For header and footer */
+.lead {
+  margin: 0 10px;
+}
+
+.heading {
+  background-color: #151515;
+  color: #cacaca;
+  padding-top: 110px;
+  padding-bottom: 150px;
+}
+
+.section {
+  padding-top: 30px;
+  background-color: #f5f5f5;
+}
+
+.display-4 {
+  font-size: 40px;
+  color: #151515;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+p.links > a {
+  color: #6ed3cf !important;
+  text-decoration: underline;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p.links {
+  padding-top: 30px;
+}
+
+.links.bottom-links > a {
+  font-size: 22px;
+}
+
+.links.bottom-links {
+  padding-top: 0;
+}
+
+/* For leasetransfer card */
+.card-title > a {
+  color: #151515;
+  text-decoration: underline;
+}
+
+.card-img-top {
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
+.contact {
+  background-color: #151515;
+  padding-bottom: 50px;
+}
