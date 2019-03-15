@@ -132,8 +132,24 @@ p.links {
     display: none;
   }
 
+  .card {
+    height: 100%;
+  }
+
   .carousel-item {
-    height: 550px;
+    height: 100%;
+  }
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .card-body {
+    height: 100%;
+  }
+
+  p {
+    min-height: 220px;
   }
 }
 
@@ -145,12 +161,6 @@ p.links {
 .right-arrow {
   height: 30px;
   margin-left: 60px;
-}
-
-@media (min-width: 767px) {
-  .carousel-item > .card {
-    height: 600px;
-  }
 }
 
 /* Carousel */
