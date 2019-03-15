@@ -117,8 +117,8 @@ p.links {
   padding-bottom: 50px;
 }
 
-.carousel-item > .card {
-  height: 700px;
+.carousel-item > .card > .card-body {
+  max-height: 200px;
 }
 
 @media (min-width: 767px) {
@@ -131,16 +131,26 @@ p.links {
   .project-cards {
     display: none;
   }
+
+  .carousel-item {
+    height: 550px;
+  }
 }
 
 .left-arrow {
   height: 30px;
-  padding-right: 110px;
+  margin-right: 60px;
 }
 
 .right-arrow {
   height: 30px;
-  padding-left: 110px;
+  margin-left: 60px;
+}
+
+@media (min-width: 767px) {
+  .carousel-item > .card {
+    height: 600px;
+  }
 }
 
 /* Carousel */
