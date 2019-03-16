@@ -148,7 +148,7 @@ p.links {
     height: 100%;
   }
 
-  p {
+  .carousel-item > .card > .card-body > p {
     min-height: 220px;
   }
 }
